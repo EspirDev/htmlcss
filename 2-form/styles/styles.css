@@ -1,0 +1,88 @@
+main {
+    background: #FFFEFE;
+}
+
+h1 {
+    color: ##333333;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+    line-height: 100%;
+}
+
+.top {
+    color: ##333333;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+    line-height: 100%;
+}
+
+.top2 {
+    color: #089FE0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+    line-height: 100%;
+
+}
+
+.first_window {
+    background: #FFFFFF;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Open Sans, sans-serif;
+    line-height: 100%;
+}
+
+.first_window::placeholder {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Open Sans, sans-serif;
+    line-height: 100%;
+}
+
+input {
+    color: #333333;
+    background: #F5F5F5;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+    line-height: 100%;
+}
+
+input::placeholder {
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+    line-height: 100%;
+}
+
+button {
+    color: #FFFFFF;
+    background: #089FE0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+    line-height: 100%;
+}
+
+.agree {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+    line-height: 100%;
+}
+
+.rules {
+    color: #089FE0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+    line-height: 100%;
+    text-decoration: none;
+}

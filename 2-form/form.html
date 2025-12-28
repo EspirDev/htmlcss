@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration form</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
@@ -12,10 +13,10 @@
         <section>
             <h1>Регистрация</h1>
             <form action="#">
-                <span>У вас уже есть аккаунт?</span> <span style="text-decoration: underline;"><a
-                        href="#">Войти</a></span>
+                <span class="top">У вас уже есть аккаунт?</span> <span class="top2"><a href="#">Войти</a></span>
                 <div>
-                    <input type="text" placeholder="Моя компания" id="company" name="company" autofocus required>
+                    <input class="first_window" type="text" placeholder="Моя компания" id="company" name="company"
+                        autofocus required>
                 </div>
                 <div>
                     <input type="text" placeholder="Имя" id="name" name="name" required>
@@ -27,8 +28,8 @@
                 <button>Зарегистрироваться</button>
                 <div>
                     <input type="checkbox" name="agree" id="agree" required>
-                    <label for="agree">Я прочитал и принимаю</label>
-                    <span><a href="#">Условия использования</a></span>
+                    <label class="agree" for="agree">Я прочитал и принимаю</label>
+                    <span><a class="rules" href="#">Условия использования</a></span>
                 </div>
             </form>
         </section>
