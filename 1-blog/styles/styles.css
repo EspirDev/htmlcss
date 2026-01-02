@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(to bottom, rgba(55, 65, 81, 1),
+            rgba(17, 24, 39, 1));
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+ul {
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.time {
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.author {
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.job {
+    font-size: 14px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.firstParagraph {
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.secondParagraph {
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.thirdParagraph {
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.custom-underline {
+    text-decoration: underline;
+    text-decoration-color: #FFFFFF;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+footer {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.img {
+    width: 50%;
+}
