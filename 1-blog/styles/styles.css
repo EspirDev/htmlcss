@@ -3,19 +3,73 @@ body {
             rgba(17, 24, 39, 1));
     font-family: Roboto;
     font-weight: 400;
+    margin: 0;
+}
+
+nav {
+    padding: 72px 180px;
+    margin-bottom: 73px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
 }
 
 ul {
+    list-style-type: none;
+}
+
+ul a {
     font-size: 16px;
     line-height: 100%;
     color: #FFFFFF;
     font-weight: 400;
+    text-decoration: none;
+}
+
+ul input {
+    background-color: rgba(31, 41, 55, 0.6);
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 100px;
+    height: 40px;
+    width: 204px;
+    border: none;
+    padding: 0 10px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.logo {
+    background-color: #4B5563;
+    width: 17px;
+    height: 23px;
+    border-radius: 3px;
+    padding: 8px 5px 4px 13px;
 }
 
 .time {
     font-size: 14px;
     line-height: 100%;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 14px;
+}
+
+.dot {
+    background-color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    vertical-align: middle;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+
 }
 
 h1 {
@@ -23,9 +77,10 @@ h1 {
     font-size: 24px;
     line-height: 38px;
     color: #FFFFFF;
+    margin: 0 0 30px;
 }
 
-.author {
+.nameAuthor {
     font-size: 16px;
     line-height: 28px;
     color: #FFFFFF;
@@ -37,22 +92,29 @@ h1 {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.author {
+    margin: 0 0 28px;
+}
+
 .firstParagraph {
     font-size: 20px;
     line-height: 32px;
     color: #FFFFFF;
+    margin: 0 0 30px;
 }
 
 .secondParagraph {
     font-size: 16px;
     line-height: 30px;
     color: #FFFFFF;
+    margin: 0 0 30px;
 }
 
 .thirdParagraph {
     font-size: 16px;
     line-height: 30px;
     color: #FFFFFF;
+    margin: 0 0 103px;
 }
 
 .custom-underline {
@@ -66,8 +128,15 @@ footer {
     font-size: 16px;
     line-height: 28px;
     color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 77px;
+    padding: 0;
+}
+
+footer p {
+    margin: 0;
 }
 
 .img {
-    width: 50%;
+    width: 896px;
+    margin: 0 0 69px;
 }
