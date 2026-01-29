@@ -1,6 +1,27 @@
-main {
-    background: #FFFEFE;
+body {
+    background:
+        linear-gradient(145deg, rgba(255, 165, 165, 1), rgba(255, 255, 255, 0) 70%),
+        linear-gradient(315deg, rgba(253, 197, 197, 1), rgba(242, 152, 222, 1));
+    background-attachment: fixed;
+    font-family: Open Sans, sans-serif;
+
 }
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 582px;
+    height: 573px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 
 h1 {
     color: #333333;
@@ -8,9 +29,19 @@ h1 {
     font-weight: 700;
     font-family: Open Sans, sans-serif;
     line-height: 100%;
+    text-align: center;
+    padding: 72px 93px 9px 93px;
+    margin-bottom: 0;
 }
 
 .top {
+    padding: 4px 173px 4px 173px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.top1 {
     color: #333333;
     font-size: 18px;
     font-weight: 400;
@@ -24,7 +55,16 @@ h1 {
     font-weight: 400;
     font-family: Open Sans, sans-serif;
     line-height: 100%;
+}
 
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 22px 1px;
+    padding: 0 93px 0 93px;
+    border-radius: 10px;
+    margin-top: 47px;
 }
 
 .first_window {
@@ -34,6 +74,7 @@ h1 {
     font-weight: 600;
     font-family: Open Sans, sans-serif;
     line-height: 100%;
+    border-radius: 10px;
 }
 
 .first_window::placeholder {
@@ -44,6 +85,18 @@ h1 {
     line-height: 100%;
 }
 
+.company,
+.email,
+.checkbox,
+.button {
+    flex: 1 1 100%;
+}
+
+.name,
+.surname {
+    flex: 1 1 calc(50% - 11px);
+}
+
 input {
     color: #333333;
     background: #F5F5F5;
@@ -51,6 +104,10 @@ input {
     font-weight: 400;
     font-family: Open Sans, sans-serif;
     line-height: 100%;
+    border: 1px solid #F5F5F5;
+    padding: 10px 11px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 input::placeholder {
@@ -61,13 +118,48 @@ input::placeholder {
     line-height: 100%;
 }
 
+input:hover {
+    border: 1px solid #089FE0;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #000000;
+}
+
 button {
     color: #FFFFFF;
+    width: 100%;
     background: #089FE0;
     font-size: 18px;
     font-weight: 400;
     font-family: Open Sans, sans-serif;
     line-height: 100%;
+    border-radius: 5px;
+    padding: 12px 11px;
+    border: none;
+    transition: background 0.3s ease-in-out;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background: #06709e;
+}
+
+button:active {
+    background: #0876a5;
+}
+
+.button {
+    width: 100%;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .agree {
@@ -76,6 +168,7 @@ button {
     font-weight: 400;
     font-family: Open Sans, sans-serif;
     line-height: 100%;
+    margin-right: 5px;
 }
 
 .rules {
@@ -85,4 +178,19 @@ button {
     font-family: Open Sans, sans-serif;
     line-height: 100%;
     text-decoration: none;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+a {
+    color: #089FE0;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #0876a5;
+
 }
