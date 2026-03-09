@@ -1,0 +1,281 @@
+/* =========================================
+   TARIFF SECTION
+   ========================================= */
+
+/**
+ * Tariff block
+ * @block tariff
+ */
+.tarif {
+    padding: 80px 0;
+}
+
+/**
+ * Tariff wrapper
+ * @element wrapper
+ */
+
+
+/**
+ * Tariff title
+ * @element title
+ */
+.tariff__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--font-size-title-xl);
+    line-height: var(--line-height-title);
+    color: var(--color-text-black);
+}
+
+/**
+ * Tariff subtitle
+ * @element subtitle
+ */
+.tariff__subtitle {
+    margin: 24px 0 40px;
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+/**
+ * Tariff cards container
+ * @element cards
+ */
+.tariff__cards {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, minmax(328px, 369px));
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/**
+ * Tariff card
+ * @element card
+ */
+.tariff__card {
+    display: grid;
+    justify-content: space-between;
+    align-items: end;
+    grid-template-areas:
+        'benefit'
+        'title'
+        'description'
+        'price'
+        'button';
+    grid-template-rows: auto auto auto auto;
+    padding: 48px 40px;
+    border-radius: var(--border-radius-sm);
+    box-shadow: 0 0 32px 0 rgba(78, 93, 124, 0.16);
+    background-color: var(--bg-color-surface);
+}
+
+/**
+ * Tariff card best modifier
+ * @modifier card--best
+ */
+.tariff__card--best {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+}
+
+.tariff__card--best .tariff__card-title,
+.tariff__card--best .tariff__card-description,
+.tariff__card--best .tariff__price-label,
+.tariff__card--best .tariff__price-value {
+    color: var(--color-text-inverse);
+}
+
+/**
+ * Tariff card benefit badge
+ * @element card-benefit
+ */
+.tariff__card-benefit {
+    grid-area: benefit;
+    margin-bottom: 16px;
+    max-width: 125px;
+    padding: 4px 16px;
+    align-self: end;
+    border-radius: var(--border-radius-sm);
+    background-color: var(--bg-color-accent-green);
+    font-size: 15px;
+    color: var(--color-text-inverse);
+}
+
+.tariff__card-benefit span {
+    font-weight: 800;
+}
+
+/**
+ * Tariff card benefit none modifier
+ * @modifier card-benefit--none
+ */
+.tariff__card-benefit--none {
+    visibility: hidden;
+}
+
+/**
+ * Tariff card title
+ * @element card-title
+ */
+.tariff__card-title {
+    grid-area: title;
+    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: var(--line-height-title);
+    color: var(--color-text-black);
+}
+
+/**
+ * Tariff card description
+ * @element card-description
+ */
+.tariff__card-description {
+    grid-area: description;
+    margin-bottom: 50px;
+    color: var(--color-text-muted);
+}
+
+/**
+ * Tariff card price
+ * @element card-price
+ */
+.tariff__card-price {
+    grid-area: price;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+    gap: 33px 18px;
+}
+
+/**
+ * Price label
+ * @element price-label
+ */
+.tariff__price-label {
+    line-height: var(--line-height-title);
+    color: var(--color-text-gray);
+}
+
+/**
+ * Price value
+ * @element price-value
+ */
+.tariff__price-value {
+    line-height: var(--line-height-title);
+    color: var(--color-text-gray);
+    font-weight: 600;
+}
+
+/**
+ * Price value highlight modifier
+ * @modifier price-value--highlight
+ */
+.tariff__price-value--highlight {
+    margin-inline-end: auto;
+    margin-left: -16px;
+    padding: 8px 16px;
+    border-radius: var(--border-radius-sm);
+    background-color: var(--bg-color-accent-orange);
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--color-text-inverse);
+}
+
+/**
+ * Tariff card button
+ * @element card-button
+ */
+.tariff__card-button {
+    grid-area: button;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 48px;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: var(--border-radius-xl);
+    background-color: var(--color-primary);
+    font-weight: 800;
+    color: var(--color-text-inverse);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.tariff__card-button:hover {
+    background-color: #2568e0;
+    transform: translateY(-2px);
+}
+
+.tariff__card-button--best {
+    grid-area: button;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 48px;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: var(--border-radius-xl);
+    background-color: var(--bg-color-surface);
+    font-weight: 800;
+    color: var(--color-primary);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.tariff__card-button--best:hover {
+    color: var(--color-primary);
+    background-color: var(--bg-color-surface);
+    transform: translateY(-2px);
+}
+
+/* Tariff Media Queries */
+/* @media (max-width: 1435px) {
+    .tariff__cards {
+        grid-template-columns: repeat(2, minmax(328px, 369px));
+        grid-template-rows: repeat(2, 1fr);
+    }
+} */
+
+@media (max-width: 1195px) {
+    .tariff__cards {
+        grid-template-columns: repeat(1, minmax(328px, 369px));
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+/* @media (max-width: 655px) {
+    .tariff__card-benefit--none {
+        display: none;
+    }
+
+    .tariff__title,
+    .tariff__subtitle {
+        text-align: flex-start;
+    }
+
+    .tariff__card {
+        padding: 48px 24px;
+        justify-content: flex-start;
+        gap: 0;
+        margin-bottom: 40px;
+    }
+
+    .tariff__card-title {
+        font-size: 32px;
+    }
+
+    .tariff__card-description {
+        line-height: var(--line-height-title);
+    }
+
+    .tariff__card-price {
+        line-height: var(--line-height-title);
+    }
+
+    .tariff__card-description,
+    .tariff__card-price {
+        margin-bottom: 32px;
+    }
+} */
