@@ -10,6 +10,7 @@
     --color-text-primary: rgba(255, 255, 255, 0.8);
     --color-text-secondary: rgba(255, 255, 255, 0.5);
     --color-text-muted: rgba(78, 93, 124, 0.5);
+    --color-text-muted-hard: rgba(78, 93, 124, 0.08);
     --color-text-inverse: #fff;
     --color-text-gray: #4e5d7c;
     --color-text-black: #000;
@@ -25,24 +26,28 @@
        ========================================= */
 
     /* Font sizes */
-    --font-size-title-xl: 48px;
-    --font-size-title-lg: 40px;
-    --font-size-title-md: 36px;
-    --font-size-body: 18px;
+    --font-size-48: 48px;
+    --font-size-40: 40px;
+    --font-size-36: 36px;
+    --font-size-32: 32px;
+    --font-size-28: 28px;
+    --font-size-24: 24px;
+    --font-size-17: 17px;
+    --font-size-15: 15px;
 
     /* Line heights */
-    --line-height-title: 120%;
-    --line-height-body: 140%;
+    --line-height-120: 120%;
+    --line-height-140: 140%;
 
     /* =========================================
        BORDER TOKENS
        ========================================= */
 
     /* Border radius */
-    --border-radius-sm: 8px;
-    --border-radius-md: 16px;
-    --border-radius-lg: 34px;
-    --border-radius-xl: 47px;
+    --border-radius-8: 8px;
+    --border-radius-16: 16px;
+    --border-radius-34: 34px;
+    --border-radius-47: 47px;
 
     /* Border styles */
     --border-color-divider: 1px solid rgba(78, 93, 124, 0.08);
@@ -99,4 +104,26 @@ a:hover {
     margin: 0 auto;
     padding: 0 24px;
     overflow: hidden;
+}
+
+.container-visible {
+    overflow: visible;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
