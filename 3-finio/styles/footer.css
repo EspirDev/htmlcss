@@ -1,0 +1,91 @@
+.footer {
+    background-color: var(--bg-color-surface-dark);
+}
+
+.footer__logo-img {
+    max-width: 97px;
+}
+
+.footer__menu,
+.footer__docs,
+.footer__copyright,
+.footer__email {
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    font-size: var(--font-size-17);
+    line-height: var(--line-height-140)
+}
+
+.footer__finio-description,
+.footer__contacts {
+    font-size: var(--font-size-17);
+    line-height: var(--line-height-140);
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.footer__divider {
+    height: 1px;
+    background-color: var(--color-text-muted-hard);
+    margin: 40px 0 40px;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    margin: 0 0 80px; */
+}
+
+.footer__top-part {
+    margin-top: 80px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.footer__finio {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 260px;
+}
+
+.footer__menu,
+.footer__docs,
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__bottom-part {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 40px 0 80px; */
+}
+
+.footer__payment-logos {
+    display: flex;
+    gap: 16px;
+    align-content: center;
+    margin-bottom: 32px;
+}
+
+.footer__payment-logo {
+    max-width: 80px;
+}
+
+@media (max-width: 800px) {
+    .footer__top-part {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 50px;
+        /* align-items: center; */
+    }
+
+    .footer__bottom-part {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
